@@ -65,7 +65,7 @@
 			
 			// add z-index and optional shadow
 			if (e.shadow) {target_image.addClass('quickZoom-hoverShadow');}
-			target_image.css({'z-index':'10'});
+			target_image.css({'z-index':10});
 			
 			// enlarge the image
 			target_image.stop(true, false).animate({
@@ -109,11 +109,11 @@
 				duration: e.speedOut,
 				easing: e.easeOut,
 				complete: function() {
-					target_image.css({'z-index':'1'});
+					target_image.css({'z-index':1});
 				}
 			});
 			target_image.removeClass('quickZoom-hoverShadow');
-			target_image.css({'z-index':'2'});
+			target_image.css({'z-index':2});
 		});
 	}
 })(jQuery);
